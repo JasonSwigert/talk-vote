@@ -7,143 +7,159 @@
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Barlow+Condensed:wght@600;700&family=EB+Garamond:wght@500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink: #1d2433;
-  --paper: #f6f7f5;
+  --ink: #1b2436;
+  --paper: #f5f7fa;
   --card: #ffffff;
-  --sky: #3e6a8a;
-  --sky-soft: #e3ecf2;
-  --gold: #b8892b;
-  --gold-soft: #f3e7cc;
-  --sage: #5f7f68;
-  --mute: #5d6574;
-  --line: #d9dde3;
-  --danger: #a2402e;
+  --navy: #1e3456;
+  --navy-soft: #e2e9f3;
+  --gold: #bf942a;
+  --gold-soft: #f6ecd2;
+  --walnut: #5b3b22;
+  --walnut-dark: #3e2715;
+  --tile: #fffdf8;
+  --sage: #4f7a5e;
+  --mute: #5b6475;
+  --line: #d8dde6;
+  --danger: #a33d2b;
   --sans: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --serif: "Source Serif 4", Georgia, serif;
+  --hymnal: "EB Garamond", Garamond, Georgia, serif;
+  --board: "Barlow Condensed", "Arial Narrow", sans-serif;
   color-scheme: light dark;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --ink: #e7eaf0; --paper: #141922; --card: #1c2330; --sky: #8db5d3; --sky-soft: #22313f;
-    --gold: #d9ad4f; --gold-soft: #3a3020; --sage: #8fb59a; --mute: #a3abb8; --line: #2e3746; --danger: #e08a74;
+    --ink: #e8ecf3; --paper: #111826; --card: #1a2333; --navy: #a9c6e8; --navy-soft: #233149;
+    --gold: #e0b84e; --gold-soft: #3a3120; --walnut: #4a2f1b; --walnut-dark: #2f1d10; --tile: #f4efe4;
+    --sage: #8dbb9c; --mute: #a5aebd; --line: #2c3749; --danger: #e38b76;
   }
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
-  margin: 0; background: var(--paper); color: var(--ink);
-  font: 17px/1.5 var(--sans);
-  padding: env(safe-area-inset-top, 0) 0 calc(150px + env(safe-area-inset-bottom, 0));
+  margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.5 var(--sans);
+  padding: env(safe-area-inset-top, 0) 0 calc(140px + env(safe-area-inset-bottom, 0));
 }
-main { max-width: 660px; margin: 0 auto; padding: 28px 20px 0; }
-header.top { margin-bottom: 28px; }
-header.top p { margin: 0; color: var(--mute); font-size: 15px; }
-h1 { font: 600 30px/1.15 var(--serif); margin: 6px 0 0; letter-spacing: -0.01em; }
-h2 { font: 700 21px/1.25 var(--sans); margin: 0 0 6px; }
-.step { color: var(--sky); font-weight: 700; font-size: 15px; margin: 0 0 4px; }
-.lead { margin: 0 0 22px; color: var(--mute); }
-a { color: var(--sky); }
+main { max-width: 660px; margin: 0 auto; padding: 0 20px; }
+a { color: var(--navy); }
 button { font: inherit; color: inherit; cursor: pointer; }
-:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; border-radius: 6px; }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: 6px; }
+
+/* Header with organ pipes */
+header.top { text-align: center; padding: 18px 0 26px; }
+.pipes { display: block; width: 100%; max-width: 420px; height: 76px; margin: 0 auto 10px; }
+.pipes rect { fill: var(--gold); transform-box: fill-box; transform-origin: bottom; animation: rise .9s cubic-bezier(.2,.8,.2,1) both; }
+.pipes .mouth { fill: var(--walnut); opacity: .55; animation: none; }
+@keyframes rise { from { transform: scaleY(.25); opacity: 0; } to { transform: scaleY(1); opacity: 1; } }
+header.top .kicker { margin: 0; color: var(--mute); font-size: 15px; }
+h1 { font: 600 33px/1.12 var(--hymnal); margin: 6px 0 0; color: var(--navy); }
+h2 { font: 600 26px/1.2 var(--hymnal); margin: 0 0 6px; color: var(--navy); }
+.program { color: var(--gold); font: 700 15px var(--sans); margin: 0 0 2px; }
+.lead { margin: 0 0 22px; color: var(--mute); }
 
 .primary {
-  background: var(--sky); color: #fff; border: 0; border-radius: 10px;
-  padding: 13px 20px; font-weight: 700; min-height: 48px;
+  background: var(--navy); color: #fff; border: 0; border-radius: 10px;
+  padding: 13px 20px; font-weight: 700; min-height: 48px; white-space: nowrap;
 }
-@media (prefers-color-scheme: dark) { .primary { color: #10161f; } }
-.primary:disabled { opacity: .45; cursor: not-allowed; }
-.quiet {
-  background: none; border: 1px solid var(--line); border-radius: 10px;
-  padding: 11px 16px; min-height: 46px;
-}
-.panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+@media (prefers-color-scheme: dark) { .primary { color: #0f1624; } }
+.primary:disabled { opacity: .4; cursor: not-allowed; }
+.quiet { background: none; border: 1.5px solid var(--line); border-radius: 10px; padding: 11px 16px; min-height: 46px; }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px 22px; }
 .panel p { margin: 0 0 14px; }
 .panel p:last-child { margin-bottom: 0; }
+.purse-line { display: flex; align-items: center; gap: 12px; background: var(--gold-soft); border-radius: 12px; padding: 12px 14px; margin: 0 0 16px; }
+.purse-line svg { flex: none; }
 .toggle { display: flex; gap: 12px; align-items: flex-start; margin: 18px 0 22px; }
-.toggle input { width: 22px; height: 22px; margin-top: 2px; accent-color: var(--sky); flex: none; }
+.toggle input { width: 22px; height: 22px; margin-top: 2px; accent-color: var(--navy); flex: none; }
 .toggle small { display: block; color: var(--mute); }
 
-/* Talks */
-.talk { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px; margin: 0 0 14px; }
-.talk h3 { font: 600 20px/1.3 var(--serif); margin: 0; }
+/* Talk cards, styled like a conference program entry */
+.talk { background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--gold); border-radius: 14px; padding: 18px 18px 16px; margin: 0 0 14px; }
+.talk h3 { font: 600 23px/1.2 var(--hymnal); margin: 0; color: var(--navy); }
 .who { color: var(--mute); font-size: 15px; margin: 4px 0 10px; }
 .summary { font: 400 17.5px/1.62 var(--serif); margin: 0 0 10px; }
 .seed { font-size: 15px; color: var(--mute); margin: 0 0 12px; }
-.seed b { color: var(--ink); font-weight: 700; }
+.seed b { color: var(--ink); }
 .read { font-size: 15px; }
 .sort { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px; }
-.sort button {
-  border: 1.5px solid var(--line); background: none; border-radius: 10px; min-height: 46px; font-weight: 700;
-}
+.sort button { border: 1.5px solid var(--line); background: none; border-radius: 10px; min-height: 46px; font-weight: 700; }
 .sort button[aria-pressed="true"][data-v="yes"] { background: var(--sage); border-color: var(--sage); color: #fff; }
-.sort button[aria-pressed="true"][data-v="maybe"] { background: var(--sky-soft); border-color: var(--sky); color: var(--ink); }
-.sort button[aria-pressed="true"][data-v="pass"] { background: none; border-color: var(--mute); color: var(--mute); text-decoration: line-through; }
+.sort button[aria-pressed="true"][data-v="maybe"] { background: var(--navy-soft); border-color: var(--navy); }
+.sort button[aria-pressed="true"][data-v="pass"] { border-color: var(--mute); color: var(--mute); text-decoration: line-through; }
 .pinned { margin-top: 12px; color: var(--sage); font-weight: 700; font-size: 15px; }
 
 /* Spend rows */
-.group { font: 700 16px var(--sans); color: var(--mute); margin: 26px 0 10px; }
+.group { font: 600 20px var(--hymnal); color: var(--navy); margin: 26px 0 10px; }
 .row { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin-bottom: 10px; }
-.row h3 { font: 600 18px/1.3 var(--serif); margin: 0 0 10px; }
-.controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.row h3 { font: 600 19px/1.25 var(--hymnal); margin: 0 0 10px; color: var(--navy); }
+.controls { display: flex; align-items: center; gap: 10px; }
 .pips { display: flex; gap: 5px; }
 .pip {
-  width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--gold); font-size: 15px;
-  background: none; font-weight: 700; color: var(--gold); display: grid; place-items: center;
+  width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--gold); background: none;
+  font: 700 15px var(--sans); color: var(--gold); display: grid; place-items: center; transition: transform .15s;
 }
-.pip.on { background: var(--gold); color: #fff; }
-@media (prefers-color-scheme: dark) { .pip.on { color: #1c1608; } }
-.keeper {
-  margin-left: auto; border: 1.5px solid var(--line); background: none; border-radius: 999px;
-  padding: 6px 11px; min-height: 36px; font-weight: 700; font-size: 14px; white-space: nowrap;
-}
-.keeper[aria-pressed="true"] { border-color: var(--gold); background: var(--gold-soft); }
+.pip.on { background: var(--gold); color: #fff; box-shadow: inset 0 0 0 3px rgba(255,255,255,.28); }
+@media (prefers-color-scheme: dark) { .pip.on { color: #1d1606; } }
+.pip:active { transform: scale(.92); }
+.keeper { margin-left: auto; border: 1.5px solid var(--line); background: none; border-radius: 999px; padding: 6px 11px; min-height: 36px; font-weight: 700; font-size: 14px; white-space: nowrap; }
+.keeper[aria-pressed="true"] { border-color: var(--gold); background: var(--gold-soft); color: var(--ink); }
 .keeper:disabled { opacity: .4; cursor: not-allowed; }
-details.passed summary { cursor: pointer; color: var(--sky); font-weight: 700; margin: 26px 0 10px; }
+details.passed summary { cursor: pointer; color: var(--navy); font-weight: 700; margin: 26px 0 10px; }
 
 /* Review */
 .tally { list-style: none; padding: 0; margin: 0 0 18px; }
 .tally li { display: flex; gap: 14px; align-items: baseline; padding: 11px 0; border-bottom: 1px solid var(--line); }
-.tally .n { font: 700 20px var(--sans); color: var(--gold); min-width: 2ch; text-align: right; }
-.tally .t { font: 400 17px/1.35 var(--serif); }
-.tally .k { color: var(--gold); font-size: 14px; font-weight: 700; display: block; font-family: var(--sans); }
+.tally .n { font: 700 24px var(--board); color: var(--gold); min-width: 2ch; text-align: right; }
+.tally .t { font: 500 19px/1.3 var(--hymnal); }
+.tally .k { color: var(--gold); font: 700 14px var(--sans); display: block; }
 .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
 .note { font-size: 15px; color: var(--mute); }
 .error { color: var(--danger); font-weight: 700; }
 
-/* The talents bar */
-.bar {
-  position: fixed; left: 0; right: 0; bottom: 0; background: var(--card);
-  border-top: 1px solid var(--line); padding: 12px 20px calc(12px + env(safe-area-inset-bottom, 0));
-  box-shadow: 0 -6px 18px rgba(20, 25, 34, .06);
-}
-.bar .in { max-width: 660px; margin: 0 auto; display: flex; gap: 14px; align-items: center; justify-content: space-between; }
-.purse { flex: 1; min-width: 0; }
-.coins { display: flex; flex-wrap: wrap; gap: 3px; margin-bottom: 4px; }
-.coin { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); transition: background .2s, transform .2s; }
-.coin.spent { background: var(--line); }
-.purse .count { font-size: 15px; color: var(--mute); }
-.purse .count b { color: var(--ink); }
-.purse .warn { color: var(--danger); font-weight: 700; }
-@media (prefers-reduced-motion: reduce) { .coin { transition: none; } }
+/* Done */
+.well { text-align: center; padding: 34px 22px; }
+.well blockquote { font: italic 500 25px/1.3 var(--hymnal); color: var(--navy); margin: 0 0 4px; }
+.well cite { display: block; font-style: normal; color: var(--mute); font-size: 14px; margin-bottom: 20px; }
+.shower { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 5; }
+.shower i { position: absolute; top: -24px; width: 16px; height: 16px; border-radius: 50%; background: var(--gold); box-shadow: inset 0 0 0 3px rgba(255,255,255,.35); animation: fall 2.4s ease-in forwards; }
+@keyframes fall { to { transform: translateY(110vh) rotate(540deg); opacity: .2; } }
 
-footer.credit { max-width: 660px; margin: 34px auto 0; padding: 0 20px; color: var(--mute); font-size: 14px; }
+/* The hymn board */
+.bar { position: fixed; left: 0; right: 0; bottom: 0; background: var(--card); border-top: 1px solid var(--line); padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0)); box-shadow: 0 -8px 22px rgba(18, 24, 38, .08); z-index: 4; }
+.bar .in { max-width: 660px; margin: 0 auto; display: flex; gap: 12px; align-items: center; }
+.board {
+  background: var(--walnut); border: 3px solid var(--walnut-dark); border-radius: 6px;
+  padding: 6px 8px 5px; display: flex; flex-direction: column; align-items: center; flex: none;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+}
+.tiles { display: flex; gap: 3px; }
+.tile { background: var(--tile); color: #1b2436; font: 700 26px/1 var(--board); width: 26px; height: 34px; display: grid; place-items: center; border-radius: 2px; box-shadow: 0 1px 0 rgba(0,0,0,.35); }
+.board small { color: #f1e5cf; font: 600 12px/1.3 var(--sans); margin-top: 3px; letter-spacing: .02em; }
+.msg { flex: 1; min-width: 0; font-size: 14.5px; color: var(--mute); line-height: 1.35; }
+.msg b { color: var(--ink); }
+.warn { color: var(--danger); font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { .pipes rect, .shower i, .pip { animation: none !important; transition: none; } .shower { display: none; } }
+
+footer.credit { max-width: 660px; margin: 34px auto 0; padding: 0 20px; color: var(--mute); font-size: 14px; text-align: center; }
 .hidden { display: none !important; }
 </style>
 </head>
 <body>
 <main id="app" aria-live="polite">
   <header class="top">
-    <p>October 2026 general conference</p>
+    <svg class="pipes" viewBox="0 0 420 76" aria-hidden="true"><rect x="0.0" y="41.8" width="24.3" height="34.2" rx="2" style="animation-delay:0.28s"/><rect class="mouth" x="6.1" y="63.0" width="12.1" height="3" rx="1.5"/><rect x="28.3" y="34.2" width="24.3" height="41.8" rx="2" style="animation-delay:0.24s"/><rect class="mouth" x="34.3" y="60.1" width="12.1" height="3" rx="1.5"/><rect x="56.5" y="27.0" width="24.3" height="49.0" rx="2" style="animation-delay:0.20s"/><rect class="mouth" x="62.6" y="57.4" width="12.1" height="3" rx="1.5"/><rect x="84.8" y="20.2" width="24.3" height="55.8" rx="2" style="animation-delay:0.16s"/><rect class="mouth" x="90.9" y="54.8" width="12.1" height="3" rx="1.5"/><rect x="113.1" y="13.9" width="24.3" height="62.1" rx="2" style="animation-delay:0.12s"/><rect class="mouth" x="119.1" y="52.4" width="12.1" height="3" rx="1.5"/><rect x="141.3" y="8.2" width="24.3" height="67.8" rx="2" style="animation-delay:0.08s"/><rect class="mouth" x="147.4" y="50.2" width="12.1" height="3" rx="1.5"/><rect x="169.6" y="3.3" width="24.3" height="72.7" rx="2" style="animation-delay:0.04s"/><rect class="mouth" x="175.7" y="48.4" width="12.1" height="3" rx="1.5"/><rect x="197.9" y="0.0" width="24.3" height="76.0" rx="2" style="animation-delay:0.00s"/><rect class="mouth" x="203.9" y="47.1" width="12.1" height="3" rx="1.5"/><rect x="226.1" y="3.3" width="24.3" height="72.7" rx="2" style="animation-delay:0.04s"/><rect class="mouth" x="232.2" y="48.4" width="12.1" height="3" rx="1.5"/><rect x="254.4" y="8.2" width="24.3" height="67.8" rx="2" style="animation-delay:0.08s"/><rect class="mouth" x="260.5" y="50.2" width="12.1" height="3" rx="1.5"/><rect x="282.7" y="13.9" width="24.3" height="62.1" rx="2" style="animation-delay:0.12s"/><rect class="mouth" x="288.7" y="52.4" width="12.1" height="3" rx="1.5"/><rect x="310.9" y="20.2" width="24.3" height="55.8" rx="2" style="animation-delay:0.16s"/><rect class="mouth" x="317.0" y="54.8" width="12.1" height="3" rx="1.5"/><rect x="339.2" y="27.0" width="24.3" height="49.0" rx="2" style="animation-delay:0.20s"/><rect class="mouth" x="345.3" y="57.4" width="12.1" height="3" rx="1.5"/><rect x="367.5" y="34.2" width="24.3" height="41.8" rx="2" style="animation-delay:0.24s"/><rect class="mouth" x="373.5" y="60.1" width="12.1" height="3" rx="1.5"/><rect x="395.7" y="41.8" width="24.3" height="34.2" rx="2" style="animation-delay:0.28s"/><rect class="mouth" x="401.8" y="63.0" width="12.1" height="3" rx="1.5"/></svg>
+    <p class="kicker">October 2026 general conference</p>
     <h1>Which talks should we discuss this season?</h1>
   </header>
   <div id="screen"><p class="note">Loading your ballot…</p></div>
 </main>
 <footer class="credit">Summaries were drafted with AI help and reviewed by Jason Swigert. Each links to the full talk; please read the talk itself before you decide.</footer>
 <div class="bar hidden" id="bar"><div class="in">
-  <div class="purse" id="purse"></div>
+  <div class="board" id="board" aria-hidden="true"><span class="tiles" id="tiles"></span><small id="boardLabel"></small></div>
+  <div class="msg" id="msg" aria-live="polite"></div>
   <button class="primary" id="next"></button>
 </div></div>
 
@@ -206,10 +222,11 @@ function render() {
 function welcome() {
   const round2 = S.info.round > 1;
   return `<section class="panel">
-    <h2>Hi ${esc(S.info.firstName)}.</h2>
+    <h2>Hi ${esc(S.info.firstName)}!</h2>
     <p>${round2
-      ? `A few Sundays still need talks. This short second round lists only the talks no one chose the first time. You have <b>${S.info.budget} talents</b> to spend.`
-      : `The elders quorum and Relief Society presidencies are choosing this season's talks together. You have <b>${S.info.budget} talents</b> to spend on the ones you'd most like to discuss.`}</p>
+      ? `A few Sundays still need talks. This short second round lists only the talks no one chose the first time.`
+      : `The elders quorum and Relief Society presidencies are choosing this season's talks together.`}</p>
+    <div class="purse-line"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="var(--gold)"/><circle cx="17" cy="17" r="11" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="2"/></svg><span>Like the servants in the parable, you've been given <b>${S.info.budget} talents</b>. Put them to work on the talks you'd most like to discuss.</span></div>
     <p>First sort the talks into Yes, Maybe, and Pass. Then spend your talents, from 1 to 5 per talk. About 20 minutes in all.</p>
     <p class="note">Voting closes ${esc(whenText(S.info.closesAt))}. Nobody sees anyone's choices until then.</p>
     <label class="toggle"><input type="checkbox" id="blind" ${S.blind ? 'checked' : ''}>
@@ -235,7 +252,7 @@ function talkCard(t) {
 }
 
 function sortScreen() {
-  return `<p class="step">Step 1 of 3</p><h2>Sort the talks</h2>
+  return `<p class="program">Program, part 1 of 3</p><h2>Sort the talks</h2>
     <p class="lead">Mark each talk Yes, Maybe, or Pass. You can change your mind at any point.</p>
     ${S.order.map((id) => talkCard(talk(id))).join('')}`;
 }
@@ -259,7 +276,7 @@ function spendScreen() {
   const yes = ids.filter((id) => S.triage[id] === 'yes');
   const maybe = ids.filter((id) => S.triage[id] === 'maybe');
   const rest = ids.filter((id) => !['yes', 'maybe'].includes(S.triage[id]));
-  return `<p class="step">Step 2 of 3</p><h2>Spend your talents</h2>
+  return `<p class="program">Program, part 2 of 3</p><h2>Put your talents to work</h2>
     <p class="lead">Tap a number to give that many talents to a talk; tap it again to take them back.${S.info.round === 1 ? ' Mark up to two Keepers: talks you give a full 5 and want guaranteed a Sunday.' : ''}</p>
     ${yes.length ? `<p class="group">Your Yes talks</p>${yes.map(spendRow).join('')}` : ''}
     ${maybe.length ? `<p class="group">Your Maybe talks</p>${maybe.map(spendRow).join('')}` : ''}
@@ -269,7 +286,7 @@ function spendScreen() {
 
 function reviewScreen() {
   const chosen = Object.entries(S.points).filter(([, p]) => p > 0).sort((a, b) => b[1] - a[1]);
-  return `<p class="step">Step 3 of 3</p><h2>Review and cast your ballot</h2>
+  return `<p class="program">Program, part 3 of 3</p><h2>Review and cast your ballot</h2>
     <p class="lead">You spent ${spent()} of ${S.info.budget} talents on ${chosen.length} talks.</p>
     <ul class="tally">${chosen.map(([id, p]) => `<li><span class="n">${p}</span><span class="t">${esc(talk(id).title)}${S.keepers.includes(id) ? '<span class="k">★ Keeper</span>' : ''}</span></li>`).join('')}</ul>
     ${S.error ? `<p class="error">${esc(S.error)}</p>` : ''}
@@ -277,7 +294,9 @@ function reviewScreen() {
 }
 
 function doneScreen() {
-  return `<section class="panel"><h2>Your ballot is cast.</h2>
+  return `<section class="panel well">
+    <blockquote>Well done, thou good and faithful servant.</blockquote><cite>Matthew 25:21</cite>
+    <h2>Your ballot is cast.</h2>
     <p>Thank you, ${esc(S.info.firstName)}. You can change it until ${esc(whenText(S.info.closesAt))}; just open your link again.</p>
     <p class="note">Once everyone has voted, Presidents Sanderson and Spencer will receive the results and make the final assignments.</p>
     <button class="quiet" data-go="review">See my ballot</button></section>`;
@@ -289,14 +308,19 @@ function closedScreen() {
 }
 
 // ---- The talents bar ----
+function setBoard(num, label) {
+  const digits = String(Math.max(0, num)).padStart(2, '0').split('');
+  $('#tiles').innerHTML = digits.map((d) => `<span class="tile">${d}</span>`).join('');
+  $('#boardLabel').textContent = label;
+}
 function showBar(kind) {
   const bar = $('#bar'), next = $('#next');
   bar.classList.remove('hidden');
   if (kind === 'sort') {
     const sortable = S.order.filter((id) => !isPinned(id));
     const done = sortable.filter((id) => S.triage[id]).length;
-    $('#purse').className = 'purse';
-    $('#purse').innerHTML = `<span class="count"><b>${done}</b> of ${sortable.length} sorted</span>`;
+    setBoard(done, 'sorted');
+    $('#msg').innerHTML = done === sortable.length ? '<b>All sorted.</b> Time to spend your talents.' : `of <b>${sortable.length}</b> talks sorted`;
     next.textContent = 'Spend talents';
     next.disabled = false;
     next.onclick = () => go('spend');
@@ -306,26 +330,31 @@ function showBar(kind) {
     next.onclick = () => go('review');
   }
 }
-function updatePurse() {
+function updatePurse(message) {
   const left = S.info.budget - spent();
   const short = spent() < floor();
-  const purse = $('#purse');
-  purse.className = 'purse' + (short ? ' short' : '');
-  purse.innerHTML = `<div class="coins" aria-hidden="true">${Array.from({ length: S.info.budget }, (_, i) => `<span class="coin ${i < spent() ? 'spent' : ''}"></span>`).join('')}</div>
-    <span class="count"><b>${left}</b> of ${S.info.budget} talents left${short ? `. <span class="warn">Spend at least ${floor()} to continue.</span>` : ''}</span>`;
+  setBoard(left, 'talents left');
+  $('#msg').innerHTML = message || (short
+    ? `of <b>${S.info.budget}</b>. <span class="warn">Spend at least ${floor()} to continue.</span>`
+    : left === 0 ? '<b>Every talent is at work.</b>' : `of <b>${S.info.budget}</b>. Ready when you are.`);
   $('#next').disabled = short;
 }
 
 // ---- Actions ----
 function go(screen) { S.error = ''; S.screen = screen; render(); window.scrollTo({ top: 0 }); }
+function coinShower() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const box = document.createElement('div'); box.className = 'shower';
+  box.innerHTML = Array.from({ length: 28 }, (_, i) => `<i style="left:${(i * 37) % 100}%;animation-delay:${(i % 7) * 0.12}s;width:${12 + (i % 3) * 4}px;height:${12 + (i % 3) * 4}px"></i>`).join('');
+  document.body.appendChild(box);
+  setTimeout(() => box.remove(), 3400);
+}
 
 function setPoints(id, n) {
   const cur = S.points[id] || 0;
   const want = cur === n ? 0 : n;
   if (spent() - cur + want > S.info.budget) {
-    const purse = $('#purse');
-    purse.querySelector('.count').innerHTML = `<span class="warn">Not enough talents left.</span> Take some from another talk first.`;
-    purse.classList.add('short');
+    updatePurse('<span class="warn">Your purse is empty.</span> Take talents from another talk first.');
     return;
   }
   if (want) S.points[id] = want; else delete S.points[id];
@@ -354,13 +383,13 @@ function refreshRows() {
 
 async function cast() {
   const body = { t: TOKEN, points: S.points, keepers: S.keepers, triage: S.triage };
-  if (PREVIEW) { go('done'); return; }
+  if (PREVIEW) { go('done'); coinShower(); return; }
   const btn = $('#cast'); btn.disabled = true; btn.textContent = 'Casting…';
   try {
     const r = await fetch(`${WORKER}/api/ballot`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
     const data = await r.json();
     if (!r.ok) throw new Error(data.error || 'The ballot could not be saved.');
-    go('done');
+    go('done'); coinShower();
   } catch (e) {
     S.error = `${e.message} Your choices are still here; try again in a moment.`;
     render();
