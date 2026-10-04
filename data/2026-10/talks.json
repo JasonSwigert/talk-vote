@@ -1,0 +1,103 @@
+{
+  "season": "2026-10",
+  "conference": "October 2026 general conference",
+  "sample": true,
+  "talks": [
+    {
+      "id": "t01",
+      "title": "Sample talk 1",
+      "speaker": "Speaker name",
+      "session": "Sample session",
+      "minutes": 13,
+      "url": "",
+      "summary": "This is a placeholder. Once the October 2026 talks are posted, Zion Claude will replace it with a one-paragraph summary in the same length and style for every talk. This sample's theme is Faith in Jesus Christ.",
+      "seed": "When has this principle been true in your own life?",
+      "tags": {
+        "primary": "Faith in Jesus Christ",
+        "secondary": "",
+        "goals": [],
+        "style": "doctrine"
+      }
+    },
+    {
+      "id": "t02",
+      "title": "Sample talk 2",
+      "speaker": "Speaker name",
+      "session": "Sample session",
+      "minutes": 14,
+      "url": "",
+      "summary": "This is a placeholder. Once the October 2026 talks are posted, Zion Claude will replace it with a one-paragraph summary in the same length and style for every talk. This sample's theme is Covenants.",
+      "seed": "When has this principle been true in your own life?",
+      "tags": {
+        "primary": "Covenants",
+        "secondary": "",
+        "goals": [],
+        "style": "story"
+      }
+    },
+    {
+      "id": "t03",
+      "title": "Sample talk 3",
+      "speaker": "Speaker name",
+      "session": "Sample session",
+      "minutes": 15,
+      "url": "",
+      "summary": "This is a placeholder. Once the October 2026 talks are posted, Zion Claude will replace it with a one-paragraph summary in the same length and style for every talk. This sample's theme is Ministering.",
+      "seed": "When has this principle been true in your own life?",
+      "tags": {
+        "primary": "Ministering",
+        "secondary": "",
+        "goals": [],
+        "style": "story"
+      }
+    },
+    {
+      "id": "t04",
+      "title": "Sample talk 4",
+      "speaker": "Speaker name",
+      "session": "Sample session",
+      "minutes": 16,
+      "url": "",
+      "summary": "This is a placeholder. Once the October 2026 talks are posted, Zion Claude will replace it with a one-paragraph summary in the same length and style for every talk. This sample's theme is Repentance.",
+      "seed": "When has this principle been true in your own life?",
+      "tags": {
+        "primary": "Repentance",
+        "secondary": "",
+        "goals": [],
+        "style": "doctrine"
+      }
+    },
+    {
+      "id": "t05",
+      "title": "Sample talk 5",
+      "speaker": "Speaker name",
+      "session": "Sample session",
+      "minutes": 17,
+      "url": "",
+      "summary": "This is a placeholder. Once the October 2026 talks are posted, Zion Claude will replace it with a one-paragraph summary in the same length and style for every talk. This sample's theme is The temple.",
+      "seed": "When has this principle been true in your own life?",
+      "tags": {
+        "primary": "The temple",
+        "secondary": "",
+        "goals": [],
+        "style": "story"
+      }
+    },
+    {
+      "id": "t06",
+      "title": "Sample talk 6",
+      "speaker": "Speaker name",
+      "session": "Sample session",
+      "minutes": 18,
+      "url": "",
+      "summary": "This is a placeholder. Once the October 2026 talks are posted, Zion Claude will replace it with a one-paragraph summary in the same length and style for every talk. This sample's theme is Gratitude.",
+      "seed": "When has this principle been true in your own life?",
+      "tags": {
+        "primary": "Gratitude",
+        "secondary": "",
+        "goals": [],
+        "style": "story"
+      }
+    }
+  ]
+}

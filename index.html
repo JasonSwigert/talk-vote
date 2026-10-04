@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Conference talks for our Sunday discussions</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1d2433;
+  --paper: #f6f7f5;
+  --card: #ffffff;
+  --sky: #3e6a8a;
+  --sky-soft: #e3ecf2;
+  --gold: #b8892b;
+  --gold-soft: #f3e7cc;
+  --sage: #5f7f68;
+  --mute: #5d6574;
+  --line: #d9dde3;
+  --danger: #a2402e;
+  --sans: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e7eaf0; --paper: #141922; --card: #1c2330; --sky: #8db5d3; --sky-soft: #22313f;
+    --gold: #d9ad4f; --gold-soft: #3a3020; --sage: #8fb59a; --mute: #a3abb8; --line: #2e3746; --danger: #e08a74;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 17px/1.5 var(--sans);
+  padding: env(safe-area-inset-top, 0) 0 calc(150px + env(safe-area-inset-bottom, 0));
+}
+main { max-width: 660px; margin: 0 auto; padding: 28px 20px 0; }
+header.top { margin-bottom: 28px; }
+header.top p { margin: 0; color: var(--mute); font-size: 15px; }
+h1 { font: 600 30px/1.15 var(--serif); margin: 6px 0 0; letter-spacing: -0.01em; }
+h2 { font: 700 21px/1.25 var(--sans); margin: 0 0 6px; }
+.step { color: var(--sky); font-weight: 700; font-size: 15px; margin: 0 0 4px; }
+.lead { margin: 0 0 22px; color: var(--mute); }
+a { color: var(--sky); }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; border-radius: 6px; }
+
+.primary {
+  background: var(--sky); color: #fff; border: 0; border-radius: 10px;
+  padding: 13px 20px; font-weight: 700; min-height: 48px;
+}
+@media (prefers-color-scheme: dark) { .primary { color: #10161f; } }
+.primary:disabled { opacity: .45; cursor: not-allowed; }
+.quiet {
+  background: none; border: 1px solid var(--line); border-radius: 10px;
+  padding: 11px 16px; min-height: 46px;
+}
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+.panel p { margin: 0 0 14px; }
+.panel p:last-child { margin-bottom: 0; }
+.toggle { display: flex; gap: 12px; align-items: flex-start; margin: 18px 0 22px; }
+.toggle input { width: 22px; height: 22px; margin-top: 2px; accent-color: var(--sky); flex: none; }
+.toggle small { display: block; color: var(--mute); }
+
+/* Talks */
+.talk { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px; margin: 0 0 14px; }
+.talk h3 { font: 600 20px/1.3 var(--serif); margin: 0; }
+.who { color: var(--mute); font-size: 15px; margin: 4px 0 10px; }
+.summary { font: 400 17.5px/1.62 var(--serif); margin: 0 0 10px; }
+.seed { font-size: 15px; color: var(--mute); margin: 0 0 12px; }
+.seed b { color: var(--ink); font-weight: 700; }
+.read { font-size: 15px; }
+.sort { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px; }
+.sort button {
+  border: 1.5px solid var(--line); background: none; border-radius: 10px; min-height: 46px; font-weight: 700;
+}
+.sort button[aria-pressed="true"][data-v="yes"] { background: var(--sage); border-color: var(--sage); color: #fff; }
+.sort button[aria-pressed="true"][data-v="maybe"] { background: var(--sky-soft); border-color: var(--sky); color: var(--ink); }
+.sort button[aria-pressed="true"][data-v="pass"] { background: none; border-color: var(--mute); color: var(--mute); text-decoration: line-through; }
+.pinned { margin-top: 12px; color: var(--sage); font-weight: 700; font-size: 15px; }
+
+/* Spend rows */
+.group { font: 700 16px var(--sans); color: var(--mute); margin: 26px 0 10px; }
+.row { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin-bottom: 10px; }
+.row h3 { font: 600 18px/1.3 var(--serif); margin: 0 0 10px; }
+.controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.pips { display: flex; gap: 5px; }
+.pip {
+  width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--gold); font-size: 15px;
+  background: none; font-weight: 700; color: var(--gold); display: grid; place-items: center;
+}
+.pip.on { background: var(--gold); color: #fff; }
+@media (prefers-color-scheme: dark) { .pip.on { color: #1c1608; } }
+.keeper {
+  margin-left: auto; border: 1.5px solid var(--line); background: none; border-radius: 999px;
+  padding: 6px 11px; min-height: 36px; font-weight: 700; font-size: 14px; white-space: nowrap;
+}
+.keeper[aria-pressed="true"] { border-color: var(--gold); background: var(--gold-soft); }
+.keeper:disabled { opacity: .4; cursor: not-allowed; }
+details.passed summary { cursor: pointer; color: var(--sky); font-weight: 700; margin: 26px 0 10px; }
+
+/* Review */
+.tally { list-style: none; padding: 0; margin: 0 0 18px; }
+.tally li { display: flex; gap: 14px; align-items: baseline; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.tally .n { font: 700 20px var(--sans); color: var(--gold); min-width: 2ch; text-align: right; }
+.tally .t { font: 400 17px/1.35 var(--serif); }
+.tally .k { color: var(--gold); font-size: 14px; font-weight: 700; display: block; font-family: var(--sans); }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+.note { font-size: 15px; color: var(--mute); }
+.error { color: var(--danger); font-weight: 700; }
+
+/* The talents bar */
+.bar {
+  position: fixed; left: 0; right: 0; bottom: 0; background: var(--card);
+  border-top: 1px solid var(--line); padding: 12px 20px calc(12px + env(safe-area-inset-bottom, 0));
+  box-shadow: 0 -6px 18px rgba(20, 25, 34, .06);
+}
+.bar .in { max-width: 660px; margin: 0 auto; display: flex; gap: 14px; align-items: center; justify-content: space-between; }
+.purse { flex: 1; min-width: 0; }
+.coins { display: flex; flex-wrap: wrap; gap: 3px; margin-bottom: 4px; }
+.coin { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); transition: background .2s, transform .2s; }
+.coin.spent { background: var(--line); }
+.purse .count { font-size: 15px; color: var(--mute); }
+.purse .count b { color: var(--ink); }
+.purse .warn { color: var(--danger); font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { .coin { transition: none; } }
+
+footer.credit { max-width: 660px; margin: 34px auto 0; padding: 0 20px; color: var(--mute); font-size: 14px; }
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+<main id="app" aria-live="polite">
+  <header class="top">
+    <p>October 2026 general conference</p>
+    <h1>Which talks should we discuss this season?</h1>
+  </header>
+  <div id="screen"><p class="note">Loading your ballot…</p></div>
+</main>
+<footer class="credit">Summaries were drafted with AI help and reviewed by Jason Swigert. Each links to the full talk; please read the talk itself before you decide.</footer>
+<div class="bar hidden" id="bar"><div class="in">
+  <div class="purse" id="purse"></div>
+  <button class="primary" id="next"></button>
+</div></div>
+
+<script>
+// ---- Settings ----
+const WORKER = 'https://eq-rs-talk-vote.swigertj.workers.dev';
+const TALKS_URL = 'data/2026-10/talks.json';
+
+// ---- Helpers ----
+const $ = (s, el = document) => el.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const params = new URLSearchParams(location.search);
+const TOKEN = params.get('t') || '';
+const PREVIEW = params.get('preview') === '1';
+
+function seededOrder(items, seedText) {
+  let h = 2166136261;
+  for (const ch of seedText) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619); }
+  let s = h >>> 0;
+  const rand = () => { s += 0x6d2b79f5; let t = s; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  const a = items.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+function whenText(iso) {
+  return new Intl.DateTimeFormat('en-US', { timeZone: 'America/Denver', weekday: 'long', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }).format(new Date(iso));
+}
+
+// ---- State ----
+const S = {
+  info: null, talks: [], order: [], blind: false,
+  triage: {}, points: {}, keepers: [], screen: 'welcome', error: '',
+};
+const draftKey = () => `tv:${S.info.season}:r${S.info.round}:${TOKEN || 'preview'}`;
+function saveDraft() {
+  try { localStorage.setItem(draftKey(), JSON.stringify({ triage: S.triage, points: S.points, keepers: S.keepers, blind: S.blind })); } catch (e) {}
+}
+function loadDraft() {
+  try { const d = JSON.parse(localStorage.getItem(draftKey()) || 'null'); if (d) Object.assign(S, d); } catch (e) {}
+}
+const spent = () => Object.values(S.points).reduce((a, b) => a + b, 0);
+const floor = () => Math.ceil(0.9 * S.info.budget);
+const talk = (id) => S.talks.find((t) => t.id === id);
+const isPinned = (id) => S.info.pins.includes(id);
+
+// ---- Screens ----
+function render() {
+  const screen = $('#screen');
+  const bar = $('#bar');
+  bar.classList.add('hidden');
+  if (S.screen === 'welcome') screen.innerHTML = welcome();
+  if (S.screen === 'sort') { screen.innerHTML = sortScreen(); showBar('sort'); }
+  if (S.screen === 'spend') { screen.innerHTML = spendScreen(); showBar('spend'); }
+  if (S.screen === 'review') screen.innerHTML = reviewScreen();
+  if (S.screen === 'done') screen.innerHTML = doneScreen();
+  if (S.screen === 'closed') screen.innerHTML = closedScreen();
+  wire();
+}
+
+function welcome() {
+  const round2 = S.info.round > 1;
+  return `<section class="panel">
+    <h2>Hi ${esc(S.info.firstName)}.</h2>
+    <p>${round2
+      ? `A few Sundays still need talks. This short second round lists only the talks no one chose the first time. You have <b>${S.info.budget} talents</b> to spend.`
+      : `The elders quorum and Relief Society presidencies are choosing this season's talks together. You have <b>${S.info.budget} talents</b> to spend on the ones you'd most like to discuss.`}</p>
+    <p>First sort the talks into Yes, Maybe, and Pass. Then spend your talents, from 1 to 5 per talk. About 20 minutes in all.</p>
+    <p class="note">Voting closes ${esc(whenText(S.info.closesAt))}. Nobody sees anyone's choices until then.</p>
+    <label class="toggle"><input type="checkbox" id="blind" ${S.blind ? 'checked' : ''}>
+      <span>Hide speaker names while I sort<small>Some people find it easier to judge each message on its own.</small></span></label>
+    <button class="primary" data-go="sort">Start sorting</button>
+    ${PREVIEW ? '<p class="note" style="margin-top:16px">Preview mode: nothing will be saved or sent.</p>' : ''}
+  </section>`;
+}
+
+function talkCard(t) {
+  const pinned = isPinned(t.id);
+  const v = S.triage[t.id];
+  const who = S.blind ? '' : `<p class="who">${esc(t.speaker)}${t.session ? `, ${esc(t.session)}` : ''}${t.minutes ? `, about ${t.minutes} minutes` : ''}</p>`;
+  return `<article class="talk" id="talk-${esc(t.id)}">
+    <h3>${esc(t.title)}</h3>${who || '<p class="who"></p>'}
+    <p class="summary">${esc(t.summary)}</p>
+    ${t.seed ? `<p class="seed"><b>A question to open with:</b> ${esc(t.seed)}</p>` : ''}
+    ${t.url ? `<a class="read" href="${esc(t.url)}" target="_blank" rel="noopener">Read the full talk</a>` : ''}
+    ${pinned ? '<p class="pinned">Already chosen for the season</p>' : `<div class="sort" role="group" aria-label="Sort this talk">
+      ${['yes', 'maybe', 'pass'].map((x) => `<button data-sort="${esc(t.id)}" data-v="${x}" aria-pressed="${v === x}">${x[0].toUpperCase() + x.slice(1)}</button>`).join('')}
+    </div>`}
+  </article>`;
+}
+
+function sortScreen() {
+  return `<p class="step">Step 1 of 3</p><h2>Sort the talks</h2>
+    <p class="lead">Mark each talk Yes, Maybe, or Pass. You can change your mind at any point.</p>
+    ${S.order.map((id) => talkCard(talk(id))).join('')}`;
+}
+
+function spendRow(id) {
+  const t = talk(id), p = S.points[id] || 0, k = S.keepers.includes(id);
+  const canKeep = S.info.round === 1 && p === 5 && (k || S.keepers.length < 2);
+  return `<div class="row" id="row-${esc(id)}">
+    <h3>${esc(t.title)}</h3>
+    <div class="controls">
+      <div class="pips" role="group" aria-label="Talents for this talk">
+        ${[1, 2, 3, 4, 5].map((n) => `<button class="pip ${n <= p ? 'on' : ''}" data-pip="${esc(id)}" data-n="${n}" aria-label="Give ${n} talent${n > 1 ? 's' : ''}" aria-pressed="${n === p}">${n}</button>`).join('')}
+      </div>
+      ${S.info.round === 1 ? `<button class="keeper" data-keep="${esc(id)}" aria-pressed="${k}" ${canKeep || k ? '' : 'disabled'} title="A Keeper must carry 5 talents; up to two">${k ? '★ Keeper' : '☆ Keeper'}</button>` : ''}
+    </div>
+  </div>`;
+}
+
+function spendScreen() {
+  const ids = S.order.filter((id) => !isPinned(id));
+  const yes = ids.filter((id) => S.triage[id] === 'yes');
+  const maybe = ids.filter((id) => S.triage[id] === 'maybe');
+  const rest = ids.filter((id) => !['yes', 'maybe'].includes(S.triage[id]));
+  return `<p class="step">Step 2 of 3</p><h2>Spend your talents</h2>
+    <p class="lead">Tap a number to give that many talents to a talk; tap it again to take them back.${S.info.round === 1 ? ' Mark up to two Keepers: talks you give a full 5 and want guaranteed a Sunday.' : ''}</p>
+    ${yes.length ? `<p class="group">Your Yes talks</p>${yes.map(spendRow).join('')}` : ''}
+    ${maybe.length ? `<p class="group">Your Maybe talks</p>${maybe.map(spendRow).join('')}` : ''}
+    ${rest.length ? `<details class="passed"><summary>Talks you passed or didn't sort (${rest.length})</summary>${rest.map(spendRow).join('')}</details>` : ''}
+    <button class="quiet" data-go="sort" style="margin-top:12px">Back to sorting</button>`;
+}
+
+function reviewScreen() {
+  const chosen = Object.entries(S.points).filter(([, p]) => p > 0).sort((a, b) => b[1] - a[1]);
+  return `<p class="step">Step 3 of 3</p><h2>Review and cast your ballot</h2>
+    <p class="lead">You spent ${spent()} of ${S.info.budget} talents on ${chosen.length} talks.</p>
+    <ul class="tally">${chosen.map(([id, p]) => `<li><span class="n">${p}</span><span class="t">${esc(talk(id).title)}${S.keepers.includes(id) ? '<span class="k">★ Keeper</span>' : ''}</span></li>`).join('')}</ul>
+    ${S.error ? `<p class="error">${esc(S.error)}</p>` : ''}
+    <div class="actions"><button class="quiet" data-go="spend">Change talents</button><button class="primary" id="cast">Cast my ballot</button></div>`;
+}
+
+function doneScreen() {
+  return `<section class="panel"><h2>Your ballot is cast.</h2>
+    <p>Thank you, ${esc(S.info.firstName)}. You can change it until ${esc(whenText(S.info.closesAt))}; just open your link again.</p>
+    <p class="note">Once everyone has voted, Presidents Sanderson and Spencer will receive the results and make the final assignments.</p>
+    <button class="quiet" data-go="review">See my ballot</button></section>`;
+}
+
+function closedScreen() {
+  return `<section class="panel"><h2>Voting has closed for this round.</h2>
+    <p>Thank you${S.info?.firstName ? `, ${esc(S.info.firstName)}` : ''}. The presidencies will share the season's schedule once it's set.</p></section>`;
+}
+
+// ---- The talents bar ----
+function showBar(kind) {
+  const bar = $('#bar'), next = $('#next');
+  bar.classList.remove('hidden');
+  if (kind === 'sort') {
+    const sortable = S.order.filter((id) => !isPinned(id));
+    const done = sortable.filter((id) => S.triage[id]).length;
+    $('#purse').className = 'purse';
+    $('#purse').innerHTML = `<span class="count"><b>${done}</b> of ${sortable.length} sorted</span>`;
+    next.textContent = 'Spend talents';
+    next.disabled = false;
+    next.onclick = () => go('spend');
+  } else {
+    updatePurse();
+    next.textContent = 'Review';
+    next.onclick = () => go('review');
+  }
+}
+function updatePurse() {
+  const left = S.info.budget - spent();
+  const short = spent() < floor();
+  const purse = $('#purse');
+  purse.className = 'purse' + (short ? ' short' : '');
+  purse.innerHTML = `<div class="coins" aria-hidden="true">${Array.from({ length: S.info.budget }, (_, i) => `<span class="coin ${i < spent() ? 'spent' : ''}"></span>`).join('')}</div>
+    <span class="count"><b>${left}</b> of ${S.info.budget} talents left${short ? `. <span class="warn">Spend at least ${floor()} to continue.</span>` : ''}</span>`;
+  $('#next').disabled = short;
+}
+
+// ---- Actions ----
+function go(screen) { S.error = ''; S.screen = screen; render(); window.scrollTo({ top: 0 }); }
+
+function setPoints(id, n) {
+  const cur = S.points[id] || 0;
+  const want = cur === n ? 0 : n;
+  if (spent() - cur + want > S.info.budget) {
+    const purse = $('#purse');
+    purse.querySelector('.count').innerHTML = `<span class="warn">Not enough talents left.</span> Take some from another talk first.`;
+    purse.classList.add('short');
+    return;
+  }
+  if (want) S.points[id] = want; else delete S.points[id];
+  if (want !== 5) S.keepers = S.keepers.filter((k) => k !== id);
+  saveDraft();
+  refreshRows();
+  updatePurse();
+}
+function toggleKeeper(id) {
+  if (S.keepers.includes(id)) S.keepers = S.keepers.filter((k) => k !== id);
+  else if (S.keepers.length < 2 && S.points[id] === 5) S.keepers.push(id);
+  saveDraft();
+  refreshRows();
+}
+function refreshRows() {
+  document.querySelectorAll('.row').forEach((row) => {
+    const id = row.id.slice(4);
+    const focusedPip = document.activeElement?.dataset?.pip === id ? document.activeElement.dataset.n : null;
+    const focusedKeep = document.activeElement?.dataset?.keep === id;
+    row.outerHTML = spendRow(id);
+    const fresh = document.getElementById('row-' + id);
+    if (focusedPip) fresh.querySelector(`[data-n="${focusedPip}"]`).focus();
+    if (focusedKeep) fresh.querySelector('[data-keep]').focus();
+  });
+}
+
+async function cast() {
+  const body = { t: TOKEN, points: S.points, keepers: S.keepers, triage: S.triage };
+  if (PREVIEW) { go('done'); return; }
+  const btn = $('#cast'); btn.disabled = true; btn.textContent = 'Casting…';
+  try {
+    const r = await fetch(`${WORKER}/api/ballot`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.error || 'The ballot could not be saved.');
+    go('done');
+  } catch (e) {
+    S.error = `${e.message} Your choices are still here; try again in a moment.`;
+    render();
+  }
+}
+
+function wire() {
+  document.querySelectorAll('[data-go]').forEach((b) => (b.onclick = () => go(b.dataset.go)));
+  const blind = $('#blind'); if (blind) blind.onchange = () => { S.blind = blind.checked; saveDraft(); };
+  const c = $('#cast'); if (c) c.onclick = cast;
+  $('#screen').onclick = (e) => {
+    const s = e.target.closest('[data-sort]');
+    if (s) {
+      const id = s.dataset.sort, v = s.dataset.v;
+      S.triage[id] = S.triage[id] === v ? undefined : v;
+      if (!S.triage[id]) delete S.triage[id];
+      saveDraft();
+      s.parentElement.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(S.triage[id] === b.dataset.v)));
+      showBar('sort');
+      return;
+    }
+    const p = e.target.closest('[data-pip]'); if (p) return setPoints(p.dataset.pip, Number(p.dataset.n));
+    const k = e.target.closest('[data-keep]'); if (k) return toggleKeeper(k.dataset.keep);
+  };
+}
+
+// ---- Start ----
+async function start() {
+  const screen = $('#screen');
+  try {
+    const talksRes = await fetch(TALKS_URL, { cache: 'no-store' });
+    if (!talksRes.ok) throw new Error('The talk list could not be loaded.');
+    const talkData = await talksRes.json();
+    const all = talkData.talks;
+
+    if (PREVIEW) {
+      S.info = { firstName: 'friend', org: 'EQ', season: talkData.season, round: 1, budget: Math.min(42, all.length * 3), closesAt: '2026-10-18T05:59:59Z', pins: [], eligible: all.map((t) => t.id), open: true, saved: null };
+    } else {
+      if (!TOKEN) { screen.innerHTML = '<section class="panel"><h2>Please open your personal link.</h2><p>This page works from the link you were sent, which is yours alone. If you can\'t find it, ask Jason for it again.</p></section>'; return; }
+      const r = await fetch(`${WORKER}/api/ballot?t=${encodeURIComponent(TOKEN)}`);
+      const data = await r.json();
+      if (!r.ok) {
+        screen.innerHTML = `<section class="panel"><h2>This link didn't work.</h2><p>${esc(data.error || '')} Check that you opened the whole link, or ask Jason for a fresh one.</p></section>`;
+        return;
+      }
+      S.info = data;
+    }
+    S.talks = all.filter((t) => S.info.eligible.includes(t.id) || S.info.pins.includes(t.id));
+    S.order = seededOrder(S.talks.map((t) => t.id), TOKEN || 'preview');
+    loadDraft();
+    if (S.info.saved) {
+      S.points = S.info.saved.points || {};
+      S.keepers = S.info.saved.keepers || [];
+      S.triage = Object.keys(S.info.saved.triage || {}).length ? S.info.saved.triage : S.triage;
+    }
+    if (!S.info.open) S.screen = 'closed';
+    else if (S.info.saved) S.screen = 'done';
+    render();
+  } catch (e) {
+    screen.innerHTML = `<section class="panel"><h2>The ballot didn't load.</h2><p>${esc(e.message)} Check your connection and reload the page.</p></section>`;
+  }
+}
+start();
+</script>
+</body>
+</html>
