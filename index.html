@@ -227,7 +227,9 @@ function welcome() {
     <h2>Hi ${esc(S.info.firstName)}!</h2>
     <p>${round2
       ? `A few Sundays still need talks. This short second round lists only the talks no one chose the first time.`
-      : `The elders quorum and Relief Society presidencies are choosing this season's talks together.`}</p>
+      : S.info.org === 'BISHOP'
+        ? `The elders quorum and Relief Society presidencies are choosing this season's talks, and they would value your voice. Your vote is optional and very welcome.`
+        : `The elders quorum and Relief Society presidencies are choosing this season's talks together.`}</p>
     <div class="purse-line"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="var(--gold)"/><circle cx="17" cy="17" r="11" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="2"/></svg><span>Like the servants in the parable, you've been given <b>${S.info.budget} talents</b>. Put them to work on the talks you'd most like to discuss.</span></div>
     <p>First sort the talks into Yes, Maybe, and Pass. Then spend your talents, from 1 to 5 per talk. About 20 minutes in all.</p>
     <p class="note">Voting closes ${esc(whenText(S.info.closesAt))}. Nobody sees anyone's choices until then.</p>
@@ -245,7 +247,6 @@ function talkCard(t) {
   return `<article class="talk" id="talk-${esc(t.id)}">
     <h3>${esc(t.title)}</h3>${who || '<p class="who"></p>'}
     <p class="summary">${esc(t.summary)}</p>
-    ${t.seed ? `<p class="seed"><b>A question to open with:</b> ${esc(t.seed)}</p>` : ''}
     ${t.url ? `<a class="read" href="${esc(t.url)}" target="_blank" rel="noopener">Read the full talk</a>` : ''}
     ${pinned ? '<p class="pinned">Already chosen for the season</p>' : `<div class="sort" role="group" aria-label="Sort this talk">
       ${['yes', 'maybe', 'pass'].map((x) => `<button data-sort="${esc(t.id)}" data-v="${x}" aria-pressed="${v === x}">${x[0].toUpperCase() + x.slice(1)}</button>`).join('')}
@@ -291,8 +292,9 @@ function reviewScreen() {
   return `<p class="program">Program, part 3 of 3</p><h2>Review and cast your ballot</h2>
     <p class="lead">You spent ${spent()} of ${S.info.budget} talents on ${chosen.length} talks.</p>
     <ul class="tally">${chosen.map(([id, p]) => `<li><span class="n">${p}</span><span class="t">${esc(talk(id).title)}${S.keepers.includes(id) ? '<span class="k">★ Keeper</span>' : ''}</span></li>`).join('')}</ul>
+    ${spent() < floor() ? `<p class="error">Spend at least ${floor()} talents to cast your ballot. Tap Change talents to add more.</p>` : ''}
     ${S.error ? `<p class="error">${esc(S.error)}</p>` : ''}
-    <div class="actions"><button class="quiet" data-go="spend">Change talents</button><button class="primary" id="cast">Cast my ballot</button></div>`;
+    <div class="actions"><button class="quiet" data-go="spend">Change talents</button><button class="primary" id="cast" ${spent() < floor() ? 'disabled' : ''}>Cast my ballot</button></div>`;
 }
 
 function doneScreen() {
@@ -300,7 +302,7 @@ function doneScreen() {
     <blockquote>Well done, thou good and faithful servant.</blockquote><cite>Matthew 25:21</cite>
     <h2>Your ballot is cast.</h2>
     <p>Thank you, ${esc(S.info.firstName)}. You can change it until ${esc(whenText(S.info.closesAt))}; just open your link again.</p>
-    <p class="note">Once everyone has voted, Presidents Sanderson and Spencer will receive the results and make the final assignments.</p>
+    <p class="note">When voting closes, Presidents Sanderson and Spencer will receive the results and make the final assignments.</p>
     <button class="quiet" data-go="review">See my ballot</button></section>`;
 }
 

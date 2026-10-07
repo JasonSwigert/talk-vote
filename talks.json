@@ -1,0 +1,863 @@
+{
+  "season": "2026-10",
+  "conference": "October 2026 general conference (196th Semiannual)",
+  "note": "Summaries drafted with AI assistance and reviewed by Jason Swigert. Talk texts are linked, never copied.",
+  "talks": [
+    {
+      "id": "12gong",
+      "title": "Come to the Lord in His Holy House",
+      "speaker": "Elder Gerrit W. Gong",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Saturday morning",
+      "minutes": 12,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/12gong?lang=eng",
+      "summary": "Elder Gong invites each family to build its own temple culture on three doctrines: the Father's work of bringing families home through covenants, the Savior's power to change and heal us, including strained family relationships, and the Holy Spirit of Promise sealing what we faithfully keep. He asks members to worship in the temple often, value every temple regardless of size, consider owning temple clothing, and take relatives' names. Suits a family history or temple Sunday in March.",
+      "seed": "What has temple service for a relative changed in how you feel about your own family?",
+      "tags": {
+        "primary": "Temple",
+        "secondary": "Family history",
+        "goals": [
+          "temple ordinances",
+          "covenants"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "family-history",
+          "temple"
+        ]
+      }
+    },
+    {
+      "id": "13runia",
+      "title": "The Sculpting of Our Souls",
+      "speaker": "Sister Tamara W. Runia",
+      "calling": "First Counselor in the Young Women General Presidency",
+      "session": "Saturday morning",
+      "minutes": 11,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/13runia?lang=eng",
+      "summary": "Speaking from the sudden death of her adult son, Sister Runia teaches that God shapes our souls through hardship rather than sparing us from it, and that the gospel gives footing in the storm rather than shelter from the rain. She asks listeners to move from asking why trials come to asking what God is forming in them, to stop comparing their story with others', and to let the Savior do the shaping.",
+      "seed": "Looking back on a hard season, what do you see now that God was shaping in you?",
+      "tags": {
+        "primary": "Adversity and comfort",
+        "secondary": "Faith and trust",
+        "goals": [
+          "discipleship",
+          "testimony"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": []
+      }
+    },
+    {
+      "id": "14causse",
+      "title": "The Gift of Testimony",
+      "speaker": "Elder Gérald Caussé",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Saturday morning",
+      "minutes": 12,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/14causse?lang=eng",
+      "summary": "Elder Caussé teaches that a testimony of Jesus Christ is a gift of the Spirit meant to be shared, and that the Holy Ghost can carry even a short, plain witness into another heart. Bearing it also strengthens the one who shares it. He invites every disciple to watch each day for chances to testify: at home, while ministering, online, and in ordinary conversation. Pairs naturally with a fast and testimony Sunday.",
+      "seed": "When has someone's simple testimony stayed with you?",
+      "tags": {
+        "primary": "Testimony",
+        "secondary": "Holy Ghost",
+        "goals": [
+          "testimony"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "fast-sunday"
+        ]
+      }
+    },
+    {
+      "id": "15sikahema",
+      "title": "Prophets, Seers, and Revelators",
+      "speaker": "Elder Vaiangina Sikahema",
+      "calling": "Of the Seventy",
+      "session": "Saturday morning",
+      "minutes": 9,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/15sikahema?lang=eng",
+      "summary": "Elder Sikahema warns against treating the words of living prophets lightly, and contrasts that casualness with his Tongan grandparents, who in 1947 sailed through a storm to meet an Apostle and be sealed, burying their infant son on the way. He asks us to value the rare blessing of living prophets and heed them, beginning with this conference. A natural opening lesson, fresh from conference.",
+      "seed": "What counsel from a living prophet has made a practical difference in your life?",
+      "tags": {
+        "primary": "Prophets and revelation",
+        "secondary": "Covenants and ordinances",
+        "goals": [
+          "testimony",
+          "covenants"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "season-start"
+        ]
+      }
+    },
+    {
+      "id": "16hathaway",
+      "title": "Jesus Christ Is the Great Deliverer!",
+      "speaker": "Elder Kevin J. Hathaway",
+      "calling": "Of the Seventy",
+      "session": "Saturday morning",
+      "minutes": 11,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/16hathaway?lang=eng",
+      "summary": "Elder Hathaway traces a pattern in scripture: affliction raises hard questions, people seek the Lord, He assures those who keep their covenants, His grace helps them endure, and deliverance comes in His time, whether as a miracle now, relief later, or the Resurrection. He draws on a highway accident his family survived and a missionary whose father died just before she came home. He invites us to turn to Christ and hold fast to our covenants. Its witness of the Resurrection suits Easter.",
+      "seed": "Where have you seen deliverance come later, or differently, than you first hoped?",
+      "tags": {
+        "primary": "Jesus Christ",
+        "secondary": "Adversity and comfort",
+        "goals": [
+          "discipleship",
+          "covenants"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "easter"
+        ]
+      }
+    },
+    {
+      "id": "17soares",
+      "title": "A Higher and Holier Fast",
+      "speaker": "Elder Ulisses Soares",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Saturday morning",
+      "minutes": 10,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/17soares?lang=eng",
+      "summary": "Working mainly from Isaiah 58, Elder Soares teaches that fasting joined with prayer is an act of worship, not simply going without food. It aligns our will with God's, opens the way to inspiration, and turns outward through generous fast offerings for people in need. He invites members to study Isaiah's chapter on the fast and to fast more deliberately, while recognizing that some cannot for health reasons. It fits naturally near a fast Sunday.",
+      "seed": "What has made a fast feel like worship to you, rather than just hunger?",
+      "tags": {
+        "primary": "Fasting",
+        "secondary": "Tithing and offerings",
+        "goals": [
+          "discipleship"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "fast-sunday"
+        ]
+      }
+    },
+    {
+      "id": "18douglas",
+      "title": "The Hour of Your Mission Is Come",
+      "speaker": "Bishop Sean Douglas",
+      "calling": "Second Counselor in the Presiding Bishopric",
+      "session": "Saturday morning",
+      "minutes": 8,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/18douglas?lang=eng",
+      "summary": "Bishop Douglas speaks to the rising generation, teaching that they were prepared for this moment in the gathering of Israel and that missionaries are sent by the Savior Himself. He asks young men to see a mission as a priesthood duty, young women to pray about serving, and recent converts to consider it too.",
+      "seed": "What did someone do that helped you, or a young person you love, decide to serve a mission?",
+      "tags": {
+        "primary": "Missionary work",
+        "secondary": "Identity as children of God",
+        "goals": [
+          "discipleship",
+          "testimony"
+        ],
+        "style": "story",
+        "audience": "Youth and young adults",
+        "anchors": []
+      }
+    },
+    {
+      "id": "19christofferson",
+      "title": "O Be Wise",
+      "speaker": "President D. Todd Christofferson",
+      "calling": "Second Counselor in the First Presidency",
+      "session": "Saturday morning",
+      "minutes": 12,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/19christofferson?lang=eng",
+      "summary": "President Christofferson addresses gambling directly, including the sports-betting apps, online casino games, and prediction markets that now live on every phone. He teaches that gambling means taking without giving value, often at another person's expense, and so conflicts with loving our neighbor; it also spends time and money that could do good. He asks members to avoid it entirely and to weigh their example to youth and others easily drawn in. Timely around the Super Bowl or March Madness, the heaviest betting seasons.",
+      "seed": "How do we help our families think through choices the culture around us treats as harmless?",
+      "tags": {
+        "primary": "Integrity and virtue",
+        "secondary": "Wise use of time",
+        "goals": [
+          "discipleship"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "super-bowl",
+          "march-madness"
+        ]
+      }
+    },
+    {
+      "id": "21renlund",
+      "title": "“How Long Will It Be Ere They Believe Me?”",
+      "speaker": "Elder Dale G. Renlund",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Saturday afternoon",
+      "minutes": 10,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/21renlund?lang=eng",
+      "summary": "Elder Renlund teaches that we can have joy and peace through Christ now, yet we tend to fix on present troubles and forget God's past mercies. He recalls a heart-transplant patient whose first complaint after recovering was cold oatmeal, and his sister's private belief that God's promises applied to everyone but her. He invites us to record God's hand daily and to trust His promises rather than our own adequacy. A natural fit for Thanksgiving week.",
+      "seed": "What blessing have you nearly overlooked because a small annoyance was louder?",
+      "tags": {
+        "primary": "Faith and trust",
+        "secondary": "Adversity and comfort",
+        "goals": [
+          "testimony",
+          "covenants"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "thanksgiving"
+        ]
+      }
+    },
+    {
+      "id": "22farnes",
+      "title": "Divine Appointments",
+      "speaker": "President Timothy L. Farnes",
+      "calling": "Young Men General President",
+      "session": "Saturday afternoon",
+      "minutes": 11,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/22farnes?lang=eng",
+      "summary": "President Farnes teaches that taking Christ's name in the sacrament includes promising to see people as He sees them, and that ordinary encounters can be appointments God has arranged. He tells of nearly skipping a ward temple night and being encouraged there by Elder Oaks, who later didn't remember it, and of helping a frightened new missionary at an airport. He invites us to pray daily to notice these moments and to act with compassion rather than judgment.",
+      "seed": "When has an interruption turned out to be exactly where the Lord needed you?",
+      "tags": {
+        "primary": "Ministering and love",
+        "secondary": "Covenants and ordinances",
+        "goals": [
+          "discipleship",
+          "covenants"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": []
+      }
+    },
+    {
+      "id": "23chigbundu",
+      "title": "Spiritual Immunity",
+      "speaker": "Elder Christian C. Chigbundu",
+      "calling": "Of the Seventy",
+      "session": "Saturday afternoon",
+      "minutes": 8,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/23chigbundu?lang=eng",
+      "summary": "Elder Chigbundu borrows an idea from pandemic health briefings: as the body builds immunity, the soul can build protection against trials and temptation. He names four habits that build it: scripture study, especially the Book of Mormon; prayer in faith; taking the sacrament worthily; and keeping covenants, including temple worship. He tells of a homesick missionary who found purpose through daily study and a sister with cancer sustained by prayer. Its immunity image fits cold-and-flu season.",
+      "seed": "Which small daily habit has protected you most when life got hard?",
+      "tags": {
+        "primary": "Prayer and scripture study",
+        "secondary": "Covenants and ordinances",
+        "goals": [
+          "discipleship",
+          "covenants"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "flu-season"
+        ]
+      }
+    },
+    {
+      "id": "24giuffra",
+      "title": "Trusting the Lord Through Tithes and Offerings",
+      "speaker": "Elder Patricio M. Giuffra",
+      "calling": "Of the Seventy",
+      "session": "Saturday afternoon",
+      "minutes": 8,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/24giuffra?lang=eng",
+      "summary": "Elder Giuffra teaches that tithing is a law of faith that applies to everyone, whatever their income, and that keeping it can help families break cycles of poverty. As a young missionary in Chile, he taught an elderly widow who felt she could not afford to pay; after learning of the widow's mite, she prayed, was baptized, and paid faithfully. He invites us to obey out of love rather than to earn blessings, and to be patient with the Lord's timing. Suits year-end tithing declaration.",
+      "seed": "When has obeying a commandment required trust before you could see the blessing?",
+      "tags": {
+        "primary": "Tithing and offerings",
+        "secondary": "Faith and trust",
+        "goals": [
+          "discipleship",
+          "covenants"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "tithing-declaration"
+        ]
+      }
+    },
+    {
+      "id": "25morgan",
+      "title": "The Infinite Power of God in Our Covenants",
+      "speaker": "Elder Jeremiah J. Morgan",
+      "calling": "Of the Seventy",
+      "session": "Saturday afternoon",
+      "minutes": 10,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/25morgan?lang=eng",
+      "summary": "Elder Morgan, raised in the Community of Christ, traces his own conversion to covenants his third-great-grandparents made in Nauvoo, and teaches that God's covenant promises reach children and grandchildren across generations without overriding their agency. Enos's prayer for his people, still being answered, shows that those promises do not expire. He invites parents of children who have strayed not to despair, to keep their own covenants, and to keep reading the Book of Mormon. Suits a family history Sunday.",
+      "seed": "How has a covenant someone made before you shaped your own life?",
+      "tags": {
+        "primary": "Covenants and ordinances",
+        "secondary": "Family history",
+        "goals": [
+          "covenants",
+          "temple ordinances"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "family-history"
+        ]
+      }
+    },
+    {
+      "id": "26fale",
+      "title": "I Am a Child of God",
+      "speaker": "Elder Hutch U. Fale",
+      "calling": "Of the Seventy",
+      "session": "Saturday afternoon",
+      "minutes": 11,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/26fale?lang=eng",
+      "summary": "Elder Fale teaches that every person is a child of Heavenly Father with a divine nature, and that His love is never earned and so can never be lost, though His full blessings come through covenants. He makes the point with his children's baby pictures, and recalls feeling God's love reading John 3:16 as a boy in Tonga. Knowing who we are, he says, guards against worldly labels and against believing we cannot change. He invites us to turn to Christ now, a message that suits the new year.",
+      "seed": "How does remembering that someone is a child of God change the way you treat them?",
+      "tags": {
+        "primary": "Identity as children of God",
+        "secondary": "Repentance and change",
+        "goals": [
+          "testimony",
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "fresh-start"
+        ]
+      }
+    },
+    {
+      "id": "27kearon",
+      "title": "Jesus Lives to Lift",
+      "speaker": "Elder Patrick Kearon",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Saturday afternoon",
+      "minutes": 13,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/27kearon?lang=eng",
+      "summary": "Elder Kearon, who learned to fly gliders as a teenager in England, compares spiritual life to soaring on rising air: the Savior lifts those who turn to Him, often through quiet promptings we learn to feel, while neglect brings a slow, unnoticed descent, and no one holds altitude for long. He invites us to notice our own moments of lift and sinking, stay close to people who are climbing, turn from early signs of decline, and help others find lift.",
+      "seed": "What helps you notice early that you're drifting downward spiritually, and what lifts you again?",
+      "tags": {
+        "primary": "Jesus Christ",
+        "secondary": "Holy Ghost",
+        "goals": [
+          "discipleship",
+          "testimony"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": []
+      }
+    },
+    {
+      "id": "28dunn",
+      "title": "The Ninety and Ten",
+      "speaker": "Elder Michael A. Dunn",
+      "calling": "Of the Seventy",
+      "session": "Saturday afternoon",
+      "minutes": 10,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/28dunn?lang=eng",
+      "summary": "Elder Dunn tells of running his first 100-mile race and quitting at mile 90, until a friend talked him back onto the trail; a photo later showed that the friend had quietly carried his water for the last ten miles. He teaches that the Savior usually strengthens us to finish rather than shortening the road, and often carries our burdens in ways we recognize only afterward. He invites the weary to ask for help and to trust Him completely.",
+      "seed": "Looking back, when did you realize the Lord had been carrying more of the load than you knew?",
+      "tags": {
+        "primary": "Atonement and grace",
+        "secondary": "Adversity and comfort",
+        "goals": [
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "easter"
+        ]
+      }
+    },
+    {
+      "id": "29eyring",
+      "title": "Comfort from the Holy Ghost",
+      "speaker": "Elder Matthew J. Eyring",
+      "calling": "Of the Seventy",
+      "session": "Saturday afternoon",
+      "minutes": 9,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/29eyring?lang=eng",
+      "summary": "Elder Eyring teaches that self-reliance has limits: everyone eventually meets a loss they cannot fix. The Savior's Atonement rescues us from permanent loss, and along the way He sends the Holy Ghost to comfort us now. He tells of a friend whose son died suddenly and a young couple who lost a twin before birth, a loss he and his wife also knew. He invites us to give the Lord our burdens and to make the Spirit's companionship a priority.",
+      "seed": "How has the Holy Ghost comforted you, or someone you served, in a loss you couldn't fix?",
+      "tags": {
+        "primary": "Holy Ghost",
+        "secondary": "Adversity and comfort",
+        "goals": [
+          "testimony",
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": []
+      }
+    },
+    {
+      "id": "210rasband",
+      "title": "Love Like Jesus",
+      "speaker": "Elder Ronald A. Rasband",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Saturday afternoon",
+      "minutes": 12,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/210rasband?lang=eng",
+      "summary": "Elder Rasband speaks to parents and family members grieving over loved ones who have left the faith. He teaches that only the Savior can change a heart, that each person chooses for themselves, and that our part is to love as Christ does and keep praying, as Alma's father did for years. His counsel is practical: stay present, put the person ahead of the problem, release self-blame, and never give up. Timely before the holidays, when families gather.",
+      "seed": "What has helped you keep loving someone whose choices break your heart?",
+      "tags": {
+        "primary": "Families",
+        "secondary": "Ministering and love",
+        "goals": [
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "Families of loved ones who have left the faith",
+        "anchors": [
+          "thanksgiving",
+          "christmas"
+        ]
+      }
+    },
+    {
+      "id": "41eyring",
+      "title": "“Fear Not, I Am with Thee”",
+      "speaker": "President Henry B. Eyring",
+      "calling": "First Counselor in the First Presidency",
+      "session": "Sunday morning",
+      "minutes": 9,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/41eyring?lang=eng",
+      "summary": "President Eyring teaches that hardship is a purposeful part of mortal life, and that the Savior's promised comfort comes both directly through the Spirit and through disciples who act as His hands. He remembers his mother's lifelong health struggles, the picture of the Savior she kept in view during her last illness, and his father thanking each nurse who cared for her. He invites us to pray for family, friends, missionaries, and leaders, and to act on promptings to comfort.",
+      "seed": "When were you the answer to someone's prayer, or they the answer to yours?",
+      "tags": {
+        "primary": "Adversity and comfort",
+        "secondary": "Ministering and love",
+        "goals": [
+          "discipleship",
+          "testimony"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": []
+      }
+    },
+    {
+      "id": "42chibota",
+      "title": "A Child of God",
+      "speaker": "President Rosemary K. Chibota",
+      "calling": "Primary General President",
+      "session": "Sunday morning",
+      "minutes": 8,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/42chibota?lang=eng",
+      "summary": "President Chibota builds on a southern African greeting that means \"I see you,\" teaching that disciples learn to see people as the Savior does: as children of God rather than by worldly labels. She points to Jesus noticing the man at Bethesda whom others had passed for 38 years; she offers three weekly practices: learn the name of someone who feels unseen, pray to see others as God does, and use eternal labels. Its New Testament stories suit January's Come, Follow Me.",
+      "seed": "Who in our ward or neighborhood might feel unseen, and how could we notice them this week?",
+      "tags": {
+        "primary": "Identity as children of God",
+        "secondary": "Ministering and love",
+        "goals": [
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "new-testament"
+        ]
+      }
+    },
+    {
+      "id": "43andersen",
+      "title": "Courage Born of Our Faith in Jesus Christ",
+      "speaker": "Elder Neil L. Andersen",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Sunday morning",
+      "minutes": 12,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/43andersen?lang=eng",
+      "summary": "Elder Andersen teaches that faith in Christ and spiritual courage strengthen each other: faith gives courage to choose rightly, and courageous choices deepen faith. Today's distractions and misinformation make that courage necessary. His examples range from President Chibota's teenage conversion in Zimbabwe and Moroni standing alone to a family who kept their faith after wildfire took their home. He invites quiet, device-free time with God, serious attention to the sacrament, and accepting callings that feel too large.",
+      "seed": "When did acting on your faith take courage, and what did it teach you?",
+      "tags": {
+        "primary": "Faith and trust",
+        "secondary": "Testimony",
+        "goals": [
+          "testimony",
+          "discipleship",
+          "covenants"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": []
+      }
+    },
+    {
+      "id": "44fantone",
+      "title": "Take Upon Us His Name",
+      "speaker": "Elder James G. O. Fantone",
+      "calling": "Of the Seventy",
+      "session": "Sunday morning",
+      "minutes": 9,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/44fantone?lang=eng",
+      "summary": "Elder Fantone teaches that taking Christ's name upon us is more than claiming a religious identity: it is a covenant to serve Him by serving others, a lifelong commitment that changes the heart. He contrasts it with the time he wrote his own name on his daughter's school form by mistake, and remembers his parents opening their small home to people who needed shelter. He invites us to lose ourselves in lifting others, as homesick missionaries find joy once they forget themselves.",
+      "seed": "What does carrying the Savior's name look like on an ordinary Tuesday?",
+      "tags": {
+        "primary": "Covenants and ordinances",
+        "secondary": "Ministering and love",
+        "goals": [
+          "covenants",
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": []
+      }
+    },
+    {
+      "id": "45dube",
+      "title": "Come unto Christ",
+      "speaker": "Elder Edward Dube",
+      "calling": "Of the Presidency of the Seventy",
+      "session": "Sunday morning",
+      "minutes": 8,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/45dube?lang=eng",
+      "summary": "Drawing on Moroni's final invitation, Elder Dube teaches that we do not have to be perfect before coming to Christ; we come so that He can perfect us through His grace. He tells of a man struggling to quit smoking who simply did his best; he and his wife were sealed two months later. He invites anyone weighed down by addiction, doubt, guilt, or grief to come as they are, and each of us to invite one person to Christ.",
+      "seed": "What helped you, or someone you love, stop waiting to be “good enough” before coming to Christ?",
+      "tags": {
+        "primary": "Atonement and grace",
+        "secondary": "Repentance and change",
+        "goals": [
+          "discipleship",
+          "temple ordinances"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": []
+      }
+    },
+    {
+      "id": "46cook",
+      "title": "Integrity and Virtue Lead to Happiness",
+      "speaker": "Elder Quentin L. Cook",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Sunday morning",
+      "minutes": 12,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/46cook?lang=eng",
+      "summary": "Elder Cook teaches that integrity, virtue, and happiness belong together in God's plan, defining virtue broadly as moral character, goodness, modesty, and reverence for sacred things. He applies this to the coarse tone of online life and asks members to be peacemakers there. He recalls a World War II veteran he taught as a young missionary, for whom forgiveness felt like coming home from war. He invites daily scripture study, daily repentance, and service as the path to lasting joy. Its veteran's story suits Veterans Day.",
+      "seed": "Where is it hardest to keep the same character online that you keep in person?",
+      "tags": {
+        "primary": "Integrity and virtue",
+        "secondary": "Repentance and change",
+        "goals": [
+          "discipleship"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "veterans"
+        ]
+      }
+    },
+    {
+      "id": "47kyungu",
+      "title": "Using the Language of Peacemakers",
+      "speaker": "Elder Alfred Kyungu",
+      "calling": "Of the Seventy",
+      "session": "Sunday morning",
+      "minutes": 10,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/47kyungu?lang=eng",
+      "summary": "Elder Kyungu treats everyday speech as part of discipleship: words can wound or build, and choosing peaceful, respectful language takes deliberate work. Like the converted Lamanites who buried their weapons, he asks us to identify and bury our own hurtful phrases, repent of harsh words, and pray to speak peacefully when we disagree. He offers side-by-side examples of dismissive and caring expressions for home, work, and church. Its focus on words spoken at home suits Valentine's Day.",
+      "seed": "Which phrase would you like to retire from how you speak at home?",
+      "tags": {
+        "primary": "Unity and peacemaking",
+        "secondary": "Repentance and change",
+        "goals": [
+          "discipleship"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "valentine"
+        ]
+      }
+    },
+    {
+      "id": "48schmeil",
+      "title": "“Consider Your Ways, and from This Day Will the Lord Bless You”",
+      "speaker": "Elder Ciro Schmeil",
+      "calling": "Of the Seventy",
+      "session": "Sunday morning",
+      "minutes": 9,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/48schmeil?lang=eng",
+      "summary": "Elder Schmeil builds on the prophet Haggai, who told Israel they were tending their own houses while the Lord's house lay unfinished, and promised blessing from the day they turned back. Mortality, he teaches, is the time to prepare to meet God, and the Father has given two helps for the journey: Jesus Christ and covenants, renewed each week through the sacrament. He invites us to look honestly at our priorities and to come to the sacrament willing, not perfect. Its “from this day” promise suits the new year.",
+      "seed": "If you “considered your ways” this week, what one priority would you change?",
+      "tags": {
+        "primary": "Covenants and ordinances",
+        "secondary": "Repentance and change",
+        "goals": [
+          "covenants",
+          "discipleship"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "fresh-start"
+        ]
+      }
+    },
+    {
+      "id": "49oaks",
+      "title": "The Gospel of Jesus Christ Is for All",
+      "speaker": "President Dallin H. Oaks",
+      "calling": "President of The Church of Jesus Christ of Latter-day Saints",
+      "session": "Sunday morning",
+      "minutes": 11,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/49oaks?lang=eng",
+      "summary": "President Oaks teaches that the restored gospel and the Savior's Atonement are offered to every person, whatever their race, standing, or sex, on the same conditions of faith, repentance, and baptism. He speaks directly to members whose faith is weakening, counseling daily prayer and scripture study, patience, covenant keeping, and a teachable heart, and reminding them that spiritual truth comes by revelation as well as study. He also points to scripture yet to come from scattered Israel.",
+      "seed": "What has helped you hold on when questions made faith feel harder?",
+      "tags": {
+        "primary": "Jesus Christ",
+        "secondary": "Faith and trust",
+        "goals": [
+          "testimony",
+          "covenants"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": []
+      }
+    },
+    {
+      "id": "51uchtdorf",
+      "title": "Christ-Centered Unity",
+      "speaker": "President Dieter F. Uchtdorf",
+      "calling": "Acting President of the Quorum of the Twelve Apostles",
+      "session": "Sunday afternoon",
+      "minutes": 12,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/51uchtdorf?lang=eng",
+      "summary": "President Uchtdorf teaches that the Church's unity rests on Jesus Christ, not on shared politics, culture, or interests. The adversary isolates us by magnifying differences; as each of us draws nearer to the Savior, we draw nearer to one another. He recalls his own baptism at eight in a public pool, and the Nephites and Lamanites who lived as one people for two centuries after Christ came. He closes with a threefold invitation: come and see, come and help, come and belong. Timely around the November 3 election.",
+      "seed": "What helps you feel united with someone whose views differ sharply from yours?",
+      "tags": {
+        "primary": "Unity and peacemaking",
+        "secondary": "Jesus Christ",
+        "goals": [
+          "covenants",
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "election"
+        ]
+      }
+    },
+    {
+      "id": "52munoz-spannaus",
+      "title": "God Is at Your Side",
+      "speaker": "Sister Andrea Muñoz Spannaus",
+      "calling": "Second Counselor in the Young Women General Presidency",
+      "session": "Sunday afternoon",
+      "minutes": 10,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/52munoz-spannaus?lang=eng",
+      "summary": "Speaking mainly to young women, Sister Spannaus teaches that Heavenly Father knows exactly where each of them is, as her husband guided her home once he learned where she really was after her phone's map misled her. Drawing on the thirteenth article of faith, she invites them to write down worthy goals and choose one of seven habits to work on, from protecting sleep and limiting phone use to daily repentance and choosing good friends.",
+      "seed": "Which of her seven habits would make the biggest difference in your home right now?",
+      "tags": {
+        "primary": "Identity as children of God",
+        "secondary": "Holy Ghost",
+        "goals": [
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "Young women",
+        "anchors": []
+      }
+    },
+    {
+      "id": "53villanueva",
+      "title": "“Prove Me Now Herewith”",
+      "speaker": "Elder Moisés Villanueva",
+      "calling": "Of the Seventy",
+      "session": "Sunday afternoon",
+      "minutes": 8,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/53villanueva?lang=eng",
+      "summary": "Elder Villanueva teaches that the Lord's blessings for paying tithing often come quietly, in ways we may miss if we are watching for a raise or a promotion. He recalls his mother raising eight children alone while paying tithing, a sister whose propane tank lasted far longer than it should have, the widow of Zarephath's flour and oil, and Israel's clothing that did not wear out in forty years. He invites us to write our own list of quiet tithing blessings. Suits Thanksgiving or year-end tithing declaration.",
+      "seed": "What quiet blessing from paying tithing have you recognized only in hindsight?",
+      "tags": {
+        "primary": "Tithing and offerings",
+        "secondary": "Faith and trust",
+        "goals": [
+          "testimony",
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "thanksgiving",
+          "tithing-declaration"
+        ]
+      }
+    },
+    {
+      "id": "54bednar",
+      "title": "Sealed by the Holy Spirit of Promise",
+      "speaker": "Elder David A. Bednar",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Sunday afternoon",
+      "minutes": 11,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/54bednar?lang=eng",
+      "summary": "Elder Bednar teaches that ordinances are credentials for returning to God, but they must be kept with integrity, as a traveler learns when a border officer refuses his battered passport. The Holy Spirit of Promise confirms our covenants, usually gradually, through steady repentance and faithfulness. He states plainly that a faithful spouse cannot lose sealing blessings because of a partner's broken covenants or a divorce, and explains why. Its teaching on eternal marriage suits Valentine's Day.",
+      "seed": "What helps you keep your covenants current rather than letting them sit untouched?",
+      "tags": {
+        "primary": "Covenants and ordinances",
+        "secondary": "Temple",
+        "goals": [
+          "temple ordinances",
+          "covenants"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "valentine"
+        ]
+      }
+    },
+    {
+      "id": "55lebethoa",
+      "title": "Jesus Christ Is the Light and Life of the World",
+      "speaker": "Elder Thabo Lebethoa",
+      "calling": "Of the Seventy",
+      "session": "Sunday afternoon",
+      "minutes": 8,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/55lebethoa?lang=eng",
+      "summary": "Elder Lebethoa teaches that whatever we face, the answer is Jesus Christ, whose light reaches us through His Spirit, His example, and His words. He tells of an early argument with his wife that ended when he remembered the Savior's teaching against contention. He names three daily practices that let that light grow: building faith in Christ; studying scripture, especially the Book of Mormon, in whatever way works for you; and repenting daily. Short and practical; its light-of-the-world theme suits the Christmas season.",
+      "seed": "What daily habit most reliably lets the Savior's light into your home?",
+      "tags": {
+        "primary": "Jesus Christ",
+        "secondary": "Repentance and change",
+        "goals": [
+          "discipleship",
+          "testimony"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "christmas"
+        ]
+      }
+    },
+    {
+      "id": "56sinclair",
+      "title": "Quick to Help, Slow to Judge",
+      "speaker": "Elder Paul H. Sinclair",
+      "calling": "Of the Seventy",
+      "session": "Sunday afternoon",
+      "minutes": 7,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/56sinclair?lang=eng",
+      "summary": "Elder Sinclair begins with a Primary program in which a boy buttoned his sleeve to his lapel; he felt irritated, but the girl beside the boy simply unbuttoned it. From that small rebuke he turns to the Savior at the well, who gave the Samaritan woman dignity and truth and saw who she could become rather than her past. He invites us to help rather than judge, especially with new members and friends being taught. Suits January's New Testament study.",
+      "seed": "What made you feel at home when you were new to a ward?",
+      "tags": {
+        "primary": "Ministering and love",
+        "secondary": "Missionary work",
+        "goals": [
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "new-testament"
+        ]
+      }
+    },
+    {
+      "id": "57stevenson",
+      "title": "Fruit to Make One Happy",
+      "speaker": "Elder Gary E. Stevenson",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Sunday afternoon",
+      "minutes": 11,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/57stevenson?lang=eng",
+      "summary": "Speaking largely to Primary children, Elder Stevenson uses the fruit in Lehi's vision to teach that gospel truths, like fresh fruit, are known by tasting them, by living them. He names three favorites: that we are children of a loving Heavenly Father, the plan of happiness centered in the Savior's Atonement, and the gift of the Holy Ghost. Stories include a boy singing beside him after an earthquake and a grieving Buddhist priest in Japan finding peace.",
+      "seed": "Which gospel truth did you first “taste” by living it rather than hearing it?",
+      "tags": {
+        "primary": "Identity as children of God",
+        "secondary": "Missionary work",
+        "goals": [
+          "testimony",
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "Children",
+        "anchors": []
+      }
+    },
+    {
+      "id": "58reid",
+      "title": "You Are Good Enough to Teach",
+      "speaker": "Brother Gabriel W. Reid",
+      "calling": "Second Counselor in the Sunday School General Presidency",
+      "session": "Sunday afternoon",
+      "minutes": 9,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/58reid?lang=eng",
+      "summary": "Brother Reid, who grew up one of thirteen children in American Samoa and later played in the NFL, teaches that love for the Savior and for learners, not polish or expertise, is what qualifies a gospel teacher. He speaks directly to the new 25-minute lessons, inviting teachers to measure success by whether people leave closer to Christ. Suits the first Sunday of the season.",
+      "seed": "Who taught you the gospel in a way you still remember, and what made it work?",
+      "tags": {
+        "primary": "Teaching",
+        "secondary": "Ministering and love",
+        "goals": [
+          "discipleship"
+        ],
+        "style": "story",
+        "audience": "General",
+        "anchors": [
+          "season-start"
+        ]
+      }
+    },
+    {
+      "id": "59gilbert",
+      "title": "Teach Truth with Love",
+      "speaker": "Elder Clark G. Gilbert",
+      "calling": "Quorum of the Twelve Apostles",
+      "session": "Sunday afternoon",
+      "minutes": 10,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/59gilbert?lang=eng",
+      "summary": "Elder Gilbert teaches that disciples must hold firmly to truth and show real love at the same time, letting neither crowd out the other. Building on five principles from President Oaks, he counsels checking our own pride first, avoiding heated settings, listening for common ground, and never setting aside commandments in love's name. He candidly tells of winning an argument with a former friend while losing the Spirit, and of a ministering visit where patient listening opened five hearts.",
+      "seed": "When have you seen someone stand for truth and still leave the other person feeling loved?",
+      "tags": {
+        "primary": "Unity and peacemaking",
+        "secondary": "Teaching",
+        "goals": [
+          "discipleship",
+          "testimony"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": []
+      }
+    },
+    {
+      "id": "510oaks",
+      "title": "Closing Remarks",
+      "speaker": "President Dallin H. Oaks",
+      "calling": "President of The Church of Jesus Christ of Latter-day Saints",
+      "session": "Sunday afternoon",
+      "minutes": 2,
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2026/10/510oaks?lang=eng",
+      "summary": "In brief closing remarks, President Oaks reminds members that conference centered their worship on Jesus Christ and the Father's plan, and promises that those who study and act on its messages will be given more. He announces that the Salt Lake Temple will open to the public on April 5, 2027, for the first time since 1893, and introduces a new video series, Dedicate. Only a few minutes long, it pairs best with another talk; its temple announcement suits late March.",
+      "seed": "What will help us actually study these conference messages, rather than only hear them?",
+      "tags": {
+        "primary": "Temple",
+        "secondary": "Prophets and revelation",
+        "goals": [
+          "temple ordinances",
+          "testimony"
+        ],
+        "style": "doctrine",
+        "audience": "General",
+        "anchors": [
+          "late-march-temple"
+        ]
+      }
+    }
+  ]
+}
