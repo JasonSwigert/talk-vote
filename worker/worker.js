@@ -2,7 +2,8 @@
 //
 // Binding:  BALLOTS (KV namespace "eq-rs-talk-vote")
 // Vars:     SEASON, ROUND, BUDGET, SLOTS, CLOSES_AT, ALLOWED_ORIGIN, TALKS_URL,
-//           PINS (JSON array of talk ids), ANONYMOUS ("true"/"false"), TRELLO_LIST_ID
+//           PINS (JSON array of talk ids), ANONYMOUS ("true"/"false"), TRELLO_LIST_ID,
+//           ORG_WEIGHTS (optional JSON, e.g. {"EQ":1,"RS":1,"BISHOP":0.5})
 // Secrets:  VOTERS (JSON {token: {name, org}}), ADMIN_KEY,
 //           DROPBOX_APP_KEY, DROPBOX_APP_SECRET, DROPBOX_REFRESH_TOKEN,
 //           TRELLO_KEY, TRELLO_TOKEN
@@ -28,6 +29,7 @@ function cfg(env) {
     pins: JSON.parse(env.PINS || '[]'),
     voters: JSON.parse(env.VOTERS || '{}'),
     anonymous: env.ANONYMOUS === 'true',
+    orgWeights: { EQ: 1, RS: 1, BISHOP: 0.5, ...JSON.parse(env.ORG_WEIGHTS || '{}') },
   };
 }
 const ballotKey = (c, token) => `ballot:${c.season}:r${c.round}:${token}`;
@@ -82,17 +84,20 @@ async function listBallots(env, c) {
   return out;
 }
 
-// Each organization's ballots together carry equal weight, however many vote on each side.
+// Each group's ballots share that group's weight (ORG_WEIGHTS; EQ and RS 1 each, the bishop 0.5 by default),
+// however many in the group actually voted. Only groups with at least one ballot count, so missing voters
+// never break the tally: the weights are rescaled over whoever voted.
 // score = weighted average points per ballot. Ties: supporters, then largest single gift, then talk id.
 function tally(ballots, c, eligible) {
   const perOrg = {};
   for (const b of ballots) perOrg[b.org] = (perOrg[b.org] || 0) + 1;
-  const orgCount = Object.keys(perOrg).length || 1;
+  const weightOf = (org) => (org in c.orgWeights ? c.orgWeights[org] : 1);
+  const totalWeight = Object.keys(perOrg).reduce((sum, org) => sum + weightOf(org), 0) || 1;
   const rows = new Map(
     eligible.map((id) => [id, { id, score: 0, rawPoints: 0, supporters: 0, maxSingle: 0, keepers: 0, pinned: c.pins.includes(id) }]),
   );
   for (const b of ballots) {
-    const w = 1 / (orgCount * perOrg[b.org]);
+    const w = weightOf(b.org) / totalWeight / perOrg[b.org];
     for (const [id, p] of Object.entries(b.points)) {
       const r = rows.get(id);
       if (!r || !p) continue;
