@@ -166,7 +166,8 @@ footer.credit { max-width: 660px; margin: 34px auto 0; padding: 0 20px; color: v
 <script>
 // ---- Settings ----
 const WORKER = 'https://eq-rs-talk-vote.swigertj.workers.dev';
-const TALKS_URL = 'data/2026-10/talks.json';
+const DEFAULT_SEASON = '2026-10';
+const talksUrl = (season) => `data/${encodeURIComponent(season)}/talks.json`;
 
 // ---- Helpers ----
 const $ = (s, el = document) => el.querySelector(s);
@@ -201,7 +202,8 @@ function loadDraft() {
   try { const d = JSON.parse(localStorage.getItem(draftKey()) || 'null'); if (d) Object.assign(S, d); } catch (e) {}
 }
 const spent = () => Object.values(S.points).reduce((a, b) => a + b, 0);
-const floor = () => Math.ceil(0.9 * S.info.budget);
+// Spend at least 90% of the budget, but never more than the talks on this ballot can hold.
+const floor = () => Math.min(Math.ceil(0.9 * S.info.budget), 5 * S.talks.filter((t) => !isPinned(t.id)).length);
 const talk = (id) => S.talks.find((t) => t.id === id);
 const isPinned = (id) => S.info.pins.includes(id);
 
@@ -420,13 +422,13 @@ function wire() {
 async function start() {
   const screen = $('#screen');
   try {
-    const talksRes = await fetch(TALKS_URL, { cache: 'no-store' });
-    if (!talksRes.ok) throw new Error('The talk list could not be loaded.');
-    const talkData = await talksRes.json();
-    const all = talkData.talks;
-
+    let all;
     if (PREVIEW) {
-      S.info = { firstName: 'friend', org: 'EQ', season: talkData.season, round: 1, budget: Math.min(42, all.length * 3), closesAt: '2026-10-18T05:59:59Z', pins: [], eligible: all.map((t) => t.id), open: true, saved: null };
+      const season = params.get('season') || DEFAULT_SEASON;
+      const talksRes = await fetch(talksUrl(season), { cache: 'no-store' });
+      if (!talksRes.ok) throw new Error('The talk list could not be loaded.');
+      all = (await talksRes.json()).talks;
+      S.info = { firstName: 'friend', org: 'EQ', season, round: 1, budget: Math.min(42, all.length * 3), closesAt: '2026-10-18T05:59:59Z', pins: [], eligible: all.map((t) => t.id), open: true, saved: null };
     } else {
       if (!TOKEN) { screen.innerHTML = '<section class="panel"><h2>Please open your personal link.</h2><p>This page works from the link you were sent, which is yours alone. If you can\'t find it, ask Jason for it again.</p></section>'; return; }
       const r = await fetch(`${WORKER}/api/ballot?t=${encodeURIComponent(TOKEN)}`);
@@ -436,6 +438,9 @@ async function start() {
         return;
       }
       S.info = data;
+      const talksRes = await fetch(talksUrl(data.season), { cache: 'no-store' });
+      if (!talksRes.ok) throw new Error('The talk list could not be loaded.');
+      all = (await talksRes.json()).talks;
     }
     S.talks = all.filter((t) => S.info.eligible.includes(t.id) || S.info.pins.includes(t.id));
     S.order = seededOrder(S.talks.map((t) => t.id), TOKEN || 'preview');

@@ -36,7 +36,8 @@ const runoffKey = (c, round) => `runoff:${c.season}:r${round}`;
 
 // Talks eligible this round: all talks in round 1; only the runoff list afterward.
 async function eligibleTalks(env, c) {
-  const r = await fetch(env.TALKS_URL, { cf: { cacheTtl: 300 } });
+  // TALKS_URL may contain {season}, so each season reads its own talk list.
+  const r = await fetch(env.TALKS_URL.replace('{season}', encodeURIComponent(c.season)), { cf: { cacheTtl: 300 } });
   if (!r.ok) throw new Error(`talks.json unavailable (${r.status})`);
   const data = await r.json();
   const all = (data.talks || data).map((t) => t.id);
@@ -56,7 +57,8 @@ function validate(body, c, eligible) {
     sum += p;
   }
   if (sum > c.budget) return `Over budget: ${sum} of ${c.budget} points.`;
-  const floor = Math.ceil(0.9 * c.budget);
+  // 90% of the budget, but never more than this round's talks can hold (5 points each).
+  const floor = Math.min(Math.ceil(0.9 * c.budget), 5 * eligible.filter((id) => !c.pins.includes(id)).length);
   if (sum < floor) return `Please spend at least ${floor} of your ${c.budget} points.`;
   const keepers = body.keepers || [];
   if (c.round > 1 && keepers.length) return 'Keepers apply only in the first round.';
